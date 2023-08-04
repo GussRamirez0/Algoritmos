@@ -1,0 +1,43 @@
+Luis Gustavo Ramirez Berganza Carnet: 0907-23-8082
+
+Tarea de Algoritmos
+
+Con la ayuda de pseint elabore los algoritmos a los problemas planteados a continuación:
+
+1) Dado un numero por el usuario, determine si es primo o no.
+2) Dado un año, ingresado por el usuario, determine si el año es bisiesto o no.
+
+
+1.  Algoritmo NumeroPrimo
+    Definir numero, i, cont Como Entero
+
+    Escribir "Ingrese un número:"
+    Leer numero
+
+    cont <- 0
+    Para i <- 1 Hasta numero Hacer
+        Si (numero MOD i = 0) Entonces
+            cont <- cont + 1
+        Fin Si
+    Fin Para
+
+    Si (cont = 2) Entonces
+        Escribir "El número es primo."
+    Sino
+        Escribir "El número no es primo."
+    Fin Si
+Fin Algoritmo
+
+
+2. Algoritmo AnioBisiesto
+    Definir anio Como Entero
+
+    Escribir "Ingrese un año:"
+    Leer anio
+
+    Si ((anio MOD 4 = 0) Y (anio MOD 100 <> 0)) O (anio MOD 400 = 0) Entonces
+        Escribir "El año es bisiesto."
+    Sino
+        Escribir "El año no es bisiesto."
+    Fin Si
+Fin Algoritmo
